@@ -1,9 +1,8 @@
-// Prevent animation on load
+
 setTimeout(() => {
   document.body.classList.remove("preload");
 }, 500);
 
-// DOM
 const btnRules = document.querySelector(".rules-btn");
 const btnClose = document.querySelector(".close-btn");
 const modalRules = document.querySelector(".modal");
@@ -35,7 +34,7 @@ const playAgainBtn = document.querySelector(".play-again");
 const scoreNumber = document.querySelector(".score__number");
 let score = 0;
 
-// Game Logic
+
 choiceButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const choiceName = button.dataset.choice;
